@@ -1,6 +1,6 @@
 // Select color input
 // Select size input
-var color, height, width;
+let color, height, width;
 
 $('#sizePicker').submit(function (event){
     // To prevent the page from reloading
@@ -15,9 +15,9 @@ $('#sizePicker').submit(function (event){
 function makeGrid(rows, columns) {
     //To create rows based on the entries
     $('tr').remove();
-    for (var i = 1; i <= rows; i++){
+    for (let i = 1; i <= rows; i++){
         $('#pixelCanvas').append('<tr id= table' + i + '></tr>');
-        for (var j = 1; j <= columns; j++) {
+        for (let j = 1; j <= columns; j++) {
             $('#table' + i).append('<td></td>');
         }
     }
